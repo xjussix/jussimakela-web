@@ -4,13 +4,67 @@
 	{% include "components/head.njk" %}
 
 	<body>
+		<!-- preloader -->
+		<div id="loader-wrapper">
+			<div class="loader-img"><img src="static/img/logo-2.png" alt="preloader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
 
-		<header>
+		<!-- search wrapper -->
+		<div class="section search-section">
+			<a href="#" class="close-search"><img src="static/img/close.png" alt="close"></a>
+			<div class="centered">
+				<form action="#">
+					<input type="text" placeholder="Search here..">
+					<button>Search</button>
+				</form>
+			</div>
+		</div>
+		<!-- search wrapper -->
+	
+		<!-- header wrapper -->
+		<section class="header-wrapper style-two">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-md-12 text-left">
+						<a href="index.html" class="logo"><img src="static/img/logo-2.png" alt="logo"></a>
+						<a href="#" class="menu-click"><span></span><span></span><span></span></a>
+					</div>
+					<div class="col-lg-8 col-md-12">
+						{% include "components/nav.njk" %}
+					</div>
+					<div class="col-lg-2 col-md-4 text-right">
+						<ul class="soical-icon-font list-inline pt-2 pb-0">
+							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-heart"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- header wrapper -->
+
+		<!-- top header -->
+		<section class="top-header bg-pattern pad-125">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 text-left pad-left-90 pad-right-90 line-link has-animation" data-delay="10">
+						<h1 class="title-one"><span>Hi</span> my name is Jussi Mäkelä. I'm an independent consultant with focus on software product development and DevOps in particular.</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- top header -->
+
+		<!--header>
 			<em>
 				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
 			</em>
-			{% include "components/nav.njk" %}
-		</header>
+
+		</header-->
 
 		<main>
 			{{ layoutContent | safe }}
@@ -18,6 +72,15 @@
 
 		{% include "components/footer.njk" %}
 
+		
+		{% set js %}
+		{% include "assets/js/imagesloaded.min.js" %}
+    {% include "assets/js/jquery-1.12.3.min.js" %}
+		{% include "assets/js/popper.min.js" %}
+		{% include "assets/js/plugin.js" %}
+		{% include "assets/js/main.js" %}
+  	{% endset %}
+  	<script>{{ js | jsmin | safe }}</script>
 	</body>
 
 </html>
