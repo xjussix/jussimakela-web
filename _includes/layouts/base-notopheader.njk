@@ -10,14 +10,11 @@
 
 		{% include "components/headerwrapper.njk" %}
 
-		{% include "components/topheader.njk" %}
-
 		<main>
 			{{ layoutContent | safe }}
 		</main>
 
 		{% include "components/footer.njk" %}
-
 		
 		{% set js %}
 		{% include "assets/js/imagesloaded.min.js" %}
