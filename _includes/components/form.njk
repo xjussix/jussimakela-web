@@ -8,12 +8,25 @@
   <button type="submit" name="submit">Send Message</button>
 </form-->
 
+<style>
+    .hunajaa{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        z-index: -1;
+    }
+</style>
 
-<form id="contact-form" name="contact" class="checkform" method="post" netlify>
+<form id="contact-form" name="contact" class="checkform" netlify-honeypot="name1" method="post" netlify>
                       	
     <div class="form-row clearfix form-field">
         <label for="name" class="req">Name *</label>
         <input type="text" name="name" class="name" id="name" autocomplete="name" placeholder="Name" required/>
+        <label class="hunajaa" for="name1"></label>
+        <input class="hunajaa" autocomplete="off" type="text" id="name1" name="name1" placeholder="Your name here">
     </div>
     
     <div class="form-row clearfix form-field">
