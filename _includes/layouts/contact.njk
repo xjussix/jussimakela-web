@@ -1,9 +1,96 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base-notopheader.njk
 section: contact
 ---
-<h1>{{ title }}</h1>
+<!-- contact wrapper -->
+<section class="contact-wrapper pad-75">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 offset-lg-1 text-left lg-mb-mobile has-animation" data-delay="0">
+
+        <h2>hello@jussimakela.co</h2>
+        <p>Get in touch!</p>										
+      </div>
+      <div class="col-lg-5 offset-lg-1 text-left has-animation" data-delay="0">
+
+        <h2>Grab a coffee face to face</h2>
+        <p>...if you're in town!</p>					
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- contact wrapper -->
+<!-- map wrapper -->
+<section class="contact-wrapper has-animation" data-delay="0">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="map" style="height: 400px;"></div>
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCOdKtT5fapH3_OfhV3HFeZjqFs4OfNIew&callback=mapinitialize" type="text/javascript"></script>
+              <script type="text/javascript">
+                  function mapinitialize() {
+                      var latlng = new google.maps.LatLng(59.332465, 18.065616);
+                      var myOptions = {
+                          zoom: 7,
+                          center: latlng,
+                          scrollwheel: false,
+                          scaleControl: false,
+                          disableDefaultUI: false,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP,
+                          // Google Map Color Styles
+                          styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},
+      {visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},
+      {visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"off"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}
+      ]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"on"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#ffff00"},{lightness:-25},{saturation:-97}]}]
+                      };
+                      var map = new google.maps.Map(document.getElementById("map"),myOptions);
+                      
+                      var image = "/static/img/logo-1.png";
+                      var image = new google.maps.MarkerImage("/static/img/logo-1.png", null, null, null, new google.maps.Size(58,51));
+                      var marker = new google.maps.Marker({
+                          map: map, 
+                          icon: image,
+                          position: map.getCenter()
+                      });
+                      
+                      var contentString = '<b>Office</b><br>Streetname 13<br>50001 Sydney';
+                      var infowindow = new google.maps.InfoWindow({
+                          content: contentString
+                      });
+                                  
+                      google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map,marker);
+                      });
+                                      
+                          
+                  }
+                  mapinitialize();
+              </script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- map wrapper -->
+<section class="contact-wrapper pad-75 has-animation" data-delay="0">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-10 text-left offset-lg-1">
+        <h2>Leave a message</h2>
+        <p>Always happy to hear from you</p>
+
+        <div id="contact-formular">
+
+          <div id="notResults" class="dark f-small error"></div>
+          <div id="MainResult" class="error"></div>
+          
+          {% include "components/form.njk" %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {{ layoutContent | safe }}
-
-{% include "components/form.njk" %}
