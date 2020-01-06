@@ -1,9 +1,9 @@
 {
-  "title": "Eleventy Netlify Boilerplate",
-  "url": "https://eleventy-netlify-boilerplate.netlify.com",
+  "title": "Jussi Mäkelä's blog",
+  "url": "https://jussimakela.co",
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "github": "https://github.com/danurbanowicz"
+    "name": "Jussi Mäkelä",
+    "email": "hello@jussimakela.co",
+    "github": "https://github.com/xjussix"
   }
 }
