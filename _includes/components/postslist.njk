@@ -30,10 +30,10 @@
 						</a>
 						</h2>
             <p class="entry-content">{{ post.data.summary }}</p>
-            <a href="post.url" class="float-left entry-read-more">CONTINUE READING</a>
+            <a href="{{ post.url }}" class="float-left entry-read-more">CONTINUE READING</a>
             <ul class="social-share list-inline">
               <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ metadata.url | encodedUriLI }}{{ post.url | encodedUriLI }}&title={{ post.data.title }}" title="LinkedIn Share" target="_blank""><i class="fa fa-linkedin-square"></i></a></li>
               <li class="list-inline-item"><a href="https://twitter.com/intent/tweet?text={{ post.data.title }}&url={{ metadata.url}}{{ post.url }}&via=makelajussi""><i class="fa fa-twitter-square"></i></a></li>
             </ul>
             <span class="entry-meta bold float-right">Share</span>

@@ -6,6 +6,11 @@ const htmlmin = require("html-minifier");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  // URI encoding (LinkedIn)
+  eleventyConfig.addFilter("encodedUriLI", function(uri) {
+    return encodeURIComponent(uri);
+  });
+
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
