@@ -9,16 +9,18 @@ pagination:
     - post
     - posts
 permalink: /tags/{{ tag }}/
-layout: layouts/base.njk
+layout: layouts/base-notopheader.njk
 renderData:
   title: "Tagged “{{ tag }}”"
 ---
 
-<h1>Tagged “{{ tag }}”</h1>
+<section class="meta-title">
+  <div class="col-sm-12 text-center">
+    <div class="page-title pad-125 ">
+      <h1 class="has-animation" data-delay="0"><b>Tagged “{{ tag }}”</b></h1>
+    </div>
+  </div>
+</section>
 
 {% set postslist = collections[ tag ] %}
 {% include "components/postslist.njk" %}
-
-<nav>
-  <a href="{{ '/' | url }}">← Back</a>
-</nav>
