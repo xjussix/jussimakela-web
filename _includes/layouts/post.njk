@@ -49,11 +49,12 @@ section: post
           </ul>
         </div>
       </div>
-
+      {% if nextPost.url %}
       <div class="col-lg-10 offset-lg-1 bottom-border text-center next-article top-border">
         <p>Next Article</p>
-        <h2>The only professional beauty supply resources</h2>
+        <h2><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></h2>
       </div>
+      {% endif %}
     </div>
   </div>
 </section>

@@ -52,9 +52,17 @@ module.exports = function(eleventyConfig) {
 
   // only content in the `posts/` directory
   eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
+    const coll = collection.getAllSorted().filter(function(item) {
       return item.inputPath.match(/^\.\/posts\//) !== null;
     });
+    for(let i = 0; i < coll.length ; i++) {
+      const prevPost = coll[i-1];
+      const nextPost = coll[i + 1];
+  
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+    return coll;
   });
 
   // Don't process folders with static assets e.g. images
