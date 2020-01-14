@@ -2,6 +2,11 @@
   publish = "_site"
   command = "eleventy"
 
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
 # REDIRECT and HEADERS examples
 
 # Redirect rule example
