@@ -9,8 +9,8 @@
 				<article class="post-border has-animation" data-delay="0"{% if post.url == url %} data-current="current item"{% endif %}>
           <div class="entry-meta-content">
             <div class="entry-meta">
-							<a href="#">{{ post.date | readableDate }} </a><span></span>
-							<a href="#"> {{ metadata.author.name }}</a> <span></span>
+							{{ post.date | readableDate }} <span></span>
+							{{ metadata.author.name }} <span></span>
 							{% if post.data.tags %}
 								{% for tag in post.data.tags %}
 									{%- if tag != "post" -%}
