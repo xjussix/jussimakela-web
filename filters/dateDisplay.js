@@ -34,7 +34,7 @@ module.exports = function (date, part) {
   } else if (part === 'toISOString') {
     return new Date(date).toISOString();
   } else if (part === 'toHumanReadable') {
-    return DateTime.fromJSDate(d).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(d).toFormat("dd LLLL yyyy");
   } else {
     var day = d.getDate(),
       ordinal = nth(day);
