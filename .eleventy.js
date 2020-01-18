@@ -7,15 +7,18 @@ const fs = require("fs");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  eleventyConfig.addFilter("dateDisplay", require("./filters/dateDisplay.js"));
+  eleventyConfig.addFilter("valueIfEmpty", require("./filters/valueIfEmpty.js"));
+
   // URI encoding (LinkedIn)
   eleventyConfig.addFilter("encodedUriLI", function(uri) {
     return encodeURIComponent(uri);
   });
 
   // Date formatting (human readable)
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  /*'eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
-  });
+  });*/
 
   // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", dateObj => {

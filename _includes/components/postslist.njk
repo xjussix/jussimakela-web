@@ -11,7 +11,7 @@
                       {% if post.data.cover_image %} style="background-image: url(https://via.placeholder.com/920x500.png);"{% endif %}>
           <div class="entry-meta-content">
             <div class="entry-meta">
-              {{ post.date | readableDate }} <span></span>
+              {{ post.date | dateDisplay("toHumanReadable") }} <span></span>
 							{{ metadata.author.name }} <span></span>
 							{% if post.data.tags %}
 								{% for tag in post.data.tags %}
