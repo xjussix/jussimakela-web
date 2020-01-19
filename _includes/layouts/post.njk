@@ -28,15 +28,15 @@ section: post
           <h5>Share :</h5>
           <ul class="social-text light list-inline">
             <!--li class="list-inline-item"><a class="text-facebook" href="#">facebook</a></li-->
-            <li class="list-inline-item"><a class="text-twiiter" href="https://twitter.com/intent/tweet?text={{ title }}&url={{ page.url | httpUrl }}&via=makelajussi">Twitter</a></li>
-            <li class="list-inline-item"><a class="text-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | httpUrl }}&title={{ title }}">Linkedin</a></li>
+            <li class="list-inline-item"><a class="text-twitter" href="https://twitter.com/intent/tweet?text={{ title }}&url={{ page.url | httpUrl }}&via=makelajussi">Twitter</a></li>
+            <li class="list-inline-item"><a class="text-linkedin" href="#" target="_blank" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | httpUrl }}&title={{ title }}', '', '_blank, width=500, height=500, resizable=yes, scrollbars=yes'); return false;">LinkedIn</a></li>
           </ul>
         </div>
         <div class="entry-share-div">
           <h5>Tag :</h5>
           <ul class="taglist list-inline">
             <!--li class="list-inline-item"><a class="text-facebook" href="#">Travel</a></li>
-            <li class="list-inline-item"><a class="text-twiiter" href="#">Design</a></li>
+            <li class="list-inline-item"><a class="text-twitter" href="#">Design</a></li>
             <li class="list-inline-item"><a class="text-linkedin" href="#">Beauty</a></li-->
             {% if tags %}
               {% for tag in tags %}
