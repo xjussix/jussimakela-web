@@ -7,14 +7,14 @@ sitemapIgnore: true
 {%- for item in collections.all %}
 {%- if item.data.sitemapIgnore !== true %}
   <url>
-    <loc>https://www.jussimakela.co{{ item.url }}</loc>
+    <loc>{{ item.url | httpUrl }}</loc>
     {% if item.data.premier.date -%}
     <lastmod>{{ item.data.premier.date | dateDisplay("toISOString") }}</lastmod>
     {%- else -%}
     <lastmod>{{ item.date | dateDisplay("toISOString") }}</lastmod>
     {%- endif %}
-    <changefreq>{{ item.data.changefreq }}</changefreq>
-    <priority>{{ item.data.priority }}</priority>
+    <changefreq>{{ item.data.changefreq | valueIfEmpty("monthly") }}</changefreq>
+    <priority>{{ item.data.priority | valueIfEmpty("0.5") }}</priority>
   </url>
 {%- endif %}
 {%- endfor %}

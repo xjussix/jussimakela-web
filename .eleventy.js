@@ -1,4 +1,3 @@
-const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
@@ -9,21 +8,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("dateDisplay", require("./filters/dateDisplay.js"));
   eleventyConfig.addFilter("valueIfEmpty", require("./filters/valueIfEmpty.js"));
-
-  // URI encoding (LinkedIn)
-  eleventyConfig.addFilter("encodedUriLI", function(uri) {
-    return encodeURIComponent(uri);
-  });
-
-  // Date formatting (human readable)
-  /*'eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
-  });*/
-
-  // Date formatting (machine readable)
-  eleventyConfig.addFilter("machineDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
-  });
+  eleventyConfig.addFilter("httpUrl", require("./filters/httpUrl.js"));
 
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {
