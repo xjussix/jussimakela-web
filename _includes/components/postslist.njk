@@ -8,7 +8,7 @@
 				{% for post in postslist | reverse %}
 				<article class="post-border {% if post.data.cover_image %}post-feature{% endif %} has-animation" data-delay="0"
                       {% if post.url == url %} data-current="current item"{% endif %}
-                      {% if post.data.cover_image %} style="background-image: url(https://via.placeholder.com/920x500.png);"{% endif %}>
+                      {% if post.data.cover_image %} style="background-image: url({{ post.data.image_url }});"{% endif %}>
           <div class="entry-meta-content">
             <div class="entry-meta">
               {{ post.date | dateDisplay("toHumanReadable") }} <span></span>
