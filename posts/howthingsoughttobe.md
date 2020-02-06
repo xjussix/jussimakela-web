@@ -21,6 +21,8 @@ Dee Hock puts forth a highly compelling vision for the mankind and people in org
 
 The main tenet of this book to me is there's a glaring mismatch between the metaphor collectively employed by most westerners and the way nature functions in reality. The internal model of reality that most of us have builds on the machine age, where everything can be measured, predicted, and broken down into smaller pieces, fragments. Tick, tock, tick, tock. The machine age has put us in a mental cage making us think and see things as if everything's a machine and maybe even more importantly, separating us from the Earth. As if we, the mankind are masters of the universe, separate from the nature. It has given us worse and worse distribution of wealth, a dying planet and wide social issues. The alternative then is according to Hock to see things through the chaordic lens: not quite chaos, not quite order. Emergent. Everything's interconnected and whole. Just like nature.
 
+The book is also an excellent description of the chaordic organisations in the [Marshall model](https://flowchainsensei.wordpress.com/rightshifting/the-marshall-model/), the most effective collective mindset of organisations. Couldn't be further from the analytical organisations and this book makes the difference extremely obvious.
+
 Some highlights from the book:
 
 > "To command and control is to rob self and others the joys of living." Life is not about control, no matter how much we feel uncomfortable with uncertainty.
@@ -43,4 +45,4 @@ Some highlights from the book:
 >
 > Leaders educe behaviours, not compel.
 
-There's simply too many to mention, definitely a book to revisit! Also, it is an excellent description of the chaordic organisations in the [Marshall model](https://flowchainsensei.wordpress.com/rightshifting/the-marshall-model/), the most effective collective mindset of organisations. Couldn't be further from the analytical organisations and this book makes the difference extremely obvious.
+There's simply too many to mention, definitely a book to revisit!
