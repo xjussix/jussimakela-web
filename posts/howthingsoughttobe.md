@@ -23,7 +23,7 @@ The main tenet of this book to me is there's a glaring mismatch between the meta
 
 The book is also an excellent description of the chaordic organisations in the [Marshall model](https://flowchainsensei.wordpress.com/rightshifting/the-marshall-model/), the most effective collective mindset of organisations. Couldn't be further from the analytical organisations and this book makes the difference extremely obvious.
 
-Some highlights from the book:
+Some highlights from the book (Some paraphrasing mixed with my own thoughts. Deal with it.) :
 
 > To command and control is to rob self and others the joys of living. Life is not about control, no matter how much we feel uncomfort when faced with uncertainty.
 >
