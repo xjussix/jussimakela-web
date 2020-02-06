@@ -25,7 +25,7 @@ The book is also an excellent description of the chaordic organisations in the [
 
 Some highlights from the book:
 
-> "To command and control is to rob self and others the joys of living." Life is not about control, no matter how much we feel uncomfortable with uncertainty.
+> To command and control is to rob self and others the joys of living. Life is not about control, no matter how much we feel uncomfort when faced with uncertainty.
 >
 > In analytical organisations, procedure is more important than purpose, and method more important than results.
 >
