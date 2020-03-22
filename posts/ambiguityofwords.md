@@ -6,12 +6,11 @@ date: 2020-03-21T10:35:00.000Z
 summary: >-
   People seem to be experts at having arguments and defending their views, be it
   in their relationships or in their workplaces. More often than not it seems
-  (to me at least) that we're [talking past each
-  other](https://en.wikipedia.org/wiki/Talking_past_each_other). In the best
-  case we might get over that hurdle but end up in the next: We can't agree on
-  the definitions. I suppose words by design are "fluffy" and ambiguous making
-  it difficult to communicate in a precise manner. Add to that all the biases
-  and filtering that automatically takes place and we have a proper mess in our
+  (to me at least) that we're talking past each other. In the best case we might
+  get over that hurdle but end up in the next: We can't agree on the
+  definitions. I suppose words by design are "fluffy" and ambiguous making it
+  difficult to communicate in a precise manner. Add to that all the biases and
+  filtering that automatically takes place and we have a proper mess in our
   hands. Question still remains, how can we ever agree on anything if we can't
   agree on what the words mean? How can we ever explain anything, not to mention
   drawany rational conclusions if we don't define the words we use?
