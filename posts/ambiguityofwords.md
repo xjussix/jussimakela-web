@@ -78,3 +78,7 @@ P.S. Also, why on Earth doesn't anybody seem to care about defining things?
 Yours truly,
 
 Pain-in-the-butt
+
+
+
+Image by [August Brill](https://www.flickr.com/photos/augustbrill/3548557021)
