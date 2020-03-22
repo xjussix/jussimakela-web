@@ -1,7 +1,7 @@
 ---
 title: Ambiguity of words
 image_url: /static/img/darkness.jpg
-cover_image: true
+cover_image: false
 date: 2020-03-21T10:35:00.000Z
 summary: >-
   People seem to be experts at having arguments and defending their views, be it
