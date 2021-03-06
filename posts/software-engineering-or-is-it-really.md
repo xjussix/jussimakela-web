@@ -12,7 +12,9 @@ summary: During my two decades in the software industry I've seen a whole bunch
   attention to the words we use and what we mean, so what exactly does
   engineering mean and call for?
 tags:
-  - post, engineering, development
+  - post
+  - engineering
+  - development
 ---
 During my two decades in the software industry I've seen a whole bunch of different words used to describe us IT people. Coders, programmers, hackers, developers, you name it. The most recent one that seems to be on the rise is the engineer. We have software engineers, release train engineers, engineering managers and the list goes on. Call me nitpicky, but if there's something I've learned during the past few years is we need to actually pay attention to the words we use and what we mean, so what exactly does engineering mean and call for?
 
