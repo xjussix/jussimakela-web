@@ -1,6 +1,6 @@
 ---
 title: Software engineering, or is it really?
-image_url: /static/img/darkness.jpg
+image_url: /static/img/4214613297_1355eb9c5a_k.png
 cover_image: "false"
 date: 2021-03-06T09:23:17.911Z
 summary: During my two decades in the software industry I've seen a whole bunch
