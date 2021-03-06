@@ -23,8 +23,6 @@ As usual, if you only take the time to look you will find smart people most like
 >
 > the engineering method the strategy for causing the best change in a poorly understood situation within the available resources
 >
->
->
 > and by reason, the ability to distinguish between the true and the false, or what Descartes has called "good sense." Whereas reason had to await early Greek philosophy for its development, is even now denied in some cultures, and is in retreat in others, the underlying strategy that defines the engineering method has not changed since the birth of humans. To be human is to be an engineer. \[1]
 
 \
@@ -54,10 +52,6 @@ Maybe it is due to the relative young age of the software development profession
 
 I truly hope you, dear reader, will find this interesting and have the curiosity to start thinking more like an engineer whenever the situation so requires. To your surprise, it might apply to more situations than you would imagine. :)
 
-
-
-
-
 \[1] Koen, Billy Vaughn. Discussion of the Method: Conducting the Engineer's Approach to Problem Solving (page 7). Oxford University Press.
 
 \[2] Koen, Billy Vaughn. Discussion of the Method: Conducting the Engineer's Approach to Problem Solving (page 11). Oxford University Press.
@@ -73,3 +67,7 @@ I truly hope you, dear reader, will find this interesting and have the curiosity
 \[7] https://www.linkedin.com/pulse/software-dev-production-marcus-kempe/
 
 \[8] Gilb, Tom. Competitive Engineering (page 4). Elsevier Ltd.
+
+
+
+Photo: https://www.flickr.com/photos/stuckincustoms/4214613297/
