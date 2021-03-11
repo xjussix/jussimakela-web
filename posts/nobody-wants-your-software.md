@@ -1,0 +1,50 @@
+---
+title: Nobody wants your software
+image_url: /static/img/4214613297_1355eb9c5a_k.png
+cover_image: "false"
+date: 2021-03-11T16:32:31.677Z
+summary: Each and every one of us has gone through a decision process when
+  buying something, be it a new laptop, a car, a house or a restaurant dinner.
+  What is it then that you factor into the equation when deciding between
+  multiple alternatives? For instance, why did you buy that specific car that
+  you did? Whether it is a Tesla Model 3, a Porsche Taycan or a Skoda Octavia,
+  they all transport you from place A to B, they have brakes that help you stop
+  the car, they offer some form of entertainment on the way and even help you
+  navigate. From purely a functional perspective, they all do the same thing.
+  What do you base your decision on then if not the functionalities?
+tags:
+  - engineering
+---
+Each and every one of us has gone through a decision process when buying something, be it a new laptop, a car, a house or a restaurant dinner. What is it then that you factor into the equation when deciding between multiple alternatives? For instance, why did you buy that specific car that you did? Whether it is a Tesla Model 3, a Porsche Taycan or a Skoda Octavia, they all transport you from place A to B, they have brakes that help you stop the car, they offer some form of entertainment on the way and even help you navigate. From purely a functional perspective, they all do the same thing. What do you base your decision on then if not the functionalities?
+
+The answer might be obvious to you, but it all comes down to your specific needs, let us call those needs your *requirements*. All the cars I mentioned have a different set of properties, or *qualities*, that meet your requirements in different ways and it is this intersection of requirements and qualities that is the basis for making that decision which car to buy. 
+
+Yes, I definitely need to be able to travel from A to B, but do I want to do it in comfort? How much comfort? What kind of comfort? What about safety? Or reliability? Do I want to avoid using combustion engines for the sake of the environment? Do I need to be able to haul a bunch of gear for the whole family when going on a skiing trip? Do I value the experience of driving itself, how the car feels and sounds like? What do I want to message to the outside world? And lastly, but definitely not the least, how much is all of that worth to me in the form of *available resources*?
+
+In more generic terms, one could say the qualities define how well that car is being a car. How well according to who? Well, what makes a Skoda Octavia perfect for someone makes it a far cry from an optimal solution for some else. *Value*, or the perceived benefits, are relative to from whose perspective you look at.
+
+Besides you who bought the car, what about the car manufacturer itself? The car industry is full of regulations to adhere to so we need to understand those requirements already during development. There’s also the manufacturing process itself, how can we reuse as much of existing plants without modifications to control costs? Or how about the perspective of the mechanics that eventually need to get their hands dirty and service the cars? Or the CEO? The list goes on.
+
+As you can see, there are a number of parties, let us call them *stakeholders*, who have a say in this. Some are more *critical* than the others, and some of their needs are more critical than others. It is not ONLY about the end user or the customer as one would think based on the current trend of UX and agile, although they most certainly are critical.
+
+Question then becomes, how did those qualities end up in that car, randomly? Of course not! Developing new car models is an example of steering the development of something new towards **very** **clearly** and **unambiguously** defined critical qualities to meet the needs of the critical stakeholders. The engineers or designers have a very clear idea of the so-called design space within which they have the freedom to move when coming up with different solutions, or *designs*. They actively work on identifying what and where the knowledge gaps are in order to quickly close those gaps with new, (re)usable knowledge. They constantly make trade-offs between multiple design parameters in order to achieve the optimal results within that design space. What this does is they are able to rapidly eliminate a lot of alternatives that had been the wrong things to invest in but also identify very early on in the process where the risks are and what needs to be learned in order to remove costly rework in the later process steps. And perhaps most importantly, progress is measured based on the amount of knowledge achieved, not on tasks done. Likewise with many key decisions. The proverbial ship is steered based on our knowledge about the qualities we are able to achieve, not whether all tasks have been done.
+
+Why all this rambling about qualities and developing new products such as cars when I have a long background in software? Well, it’s a known fact software projects and IT in general have a bad reputation, for a reason I might add. In my search for more effective ways of approaching it I have learned  some things about how product development in other contexts works, what seems to have been working for software that we tend to ignore or not be aware of and so on. Engineering seems to be the common denominator for the absolutely more effective approaches, but for some reason even though titles like software engineer, engineering manager and release train engineer seem to be trending I’m not really sure we’re actually approaching what we do as proper engineers would do, regardless of your role. You be the judge.
+
+To me it seems we have an extreme fixation on functions and little to no focus on the qualities, the scale is completely off balance. Sure, sometimes you might have a list of so-called “non-functional” requirements but they mostly just get ignored from what I can tell, or be treated as second-class citizens at best. Just take a look at your product backlogs, your project plans, your product “roadmaps” and your company strategy. 
+
+We regularly confuse ends (results) with means (solutions, designs). We set goals in our organisations that quite frankly are an unclear mess of different means for the most part. Even if you try tracing backwards from a backlog of never-ending “user stories” (a.k.a functional requirements as what seems to be the typical understanding of them) into clear outcomes for the users or business goals, you tend to run into a deadend as everything that’s documented is ambiguous, nice sounding words with no real definition that everybody shares with the real definitions hiding in our heads. Everybody with their own interpretations of course.
+
+Even though it is the results that matter in the end and achieving the qualities that eventually leads to those results, we keep on measuring our progress by the number of tasks done. We pay no attention to whether a design actually gives us the qualities we need. Or whether it has negative effects on others. We have no notion of what it is we really should be in control of and instead just go all in and keep building things until we’re “done”. Everything we build is assumed to have value. And maybe worst of all, we assume writing more software is the answer to any given problem.
+
+Let me quote my friend Marcus Kempe who so eloquently describes what this really is about. "*\[But] software development is not a matter of processing defined, decided, abstracted, and objective information through developers, like if it was a matter of refining raw material through production lines consisting of different kinds of machinery in a factory. It is this, to a large extent, unconscious assumption that creates a lot of friction in our organizations today. Software (or product) development is too uncertain to be approached in this way; the inner nature of it will resist the mechanistic cage we are trying to confine it in.*" \[1]
+
+Ironically, the people advocating approaches such as Lean and agile often promote using tools stemming from Toyota’s production system, the way they produce cars in other words. While the meaning is of course good and positive, I can’t help but wonder if we’re only shooting ourselves in the foot by reinforcing the factory metaphor. One idea could be to actually look for inspiration from the Toyota Product Development System instead, but you knew that already, right?
+
+Comparing what I see in organisations with what I wrote in the earlier part of this article, there’s also a very clear distinction in who does what. IT and the development teams in particular tend to be treated as someone you go to order a new feature whose job it then is to fulfil that order as fast as possible, no matter how idiotic that request might be. What this does is we limit the design space to the minimum, leaving only how the code should look like to the development teams to decide. And then we wonder why we struggle with lack of engagement, ownership and pride in said teams! There’s obviously shades of grey but for the most part, I claim, we are missing out on the potentially remarkable benefits of true collaboration and creativity when you put technologists and business people in the same room. 
+
+If you actually took the time to read all the way through, I thank you dear reader. I wrote it based on the systems engineering approach that Tom Gilb is promoting in his books such as “*Principles of Software Engineering Management*” and “*Competitive Engineering*” but even Michael N. Kennedy’s books “*Lean Product Development for the Enterprise”*, “*Ready, Set, Dominate*” and “*Success is Assured”*. I truly and wholeheartedly recommend you to invest time in studying those if you want to learn more. I at least hope this article gave you some insights and some questions to think about, after all, as one of the book title’s promises, success can be assured.
+
+
+
+\[1] https://www.linkedin.com/pulse/software-dev-production-marcus-kempe/
