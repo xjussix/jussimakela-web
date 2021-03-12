@@ -15,6 +15,8 @@ summary: Each and every one of us has gone through a decision process when
 tags:
   - engineering
 ---
+*(Originally posted on ptfoto.se/devblog)*
+
 Each and every one of us has gone through a decision process when buying something, be it a new laptop, a car, a house or a restaurant dinner. What is it then that you factor into the equation when deciding between multiple alternatives? For instance, why did you buy that specific car that you did? Whether it is a Tesla Model 3, a Porsche Taycan or a Skoda Octavia, they all transport you from place A to B, they have brakes that help you stop the car, they offer some form of entertainment on the way and even help you navigate. From purely a functional perspective, they all do the same thing. What do you base your decision on then if not the functionalities?
 
 The answer might be obvious to you, but it all comes down to your specific needs, let us call those needs your *requirements*. All the cars I mentioned have a different set of properties, or *qualities*, that meet your requirements in different ways and it is this intersection of requirements and qualities that is the basis for making that decision which car to buy. 
@@ -44,7 +46,5 @@ Ironically, the people advocating approaches such as Lean and agile often promot
 Comparing what I see in organisations with what I wrote in the earlier part of this article, there’s also a very clear distinction in who does what. IT and the development teams in particular tend to be treated as someone you go to order a new feature whose job it then is to fulfil that order as fast as possible, no matter how idiotic that request might be. What this does is we limit the design space to the minimum, leaving only how the code should look like to the development teams to decide. And then we wonder why we struggle with lack of engagement, ownership and pride in said teams! There’s obviously shades of grey but for the most part, I claim, we are missing out on the potentially remarkable benefits of true collaboration and creativity when you put technologists and business people in the same room. 
 
 If you actually took the time to read all the way through, I thank you dear reader. I wrote it based on the systems engineering approach that Tom Gilb is promoting in his books such as “*Principles of Software Engineering Management*” and “*Competitive Engineering*” but even Michael N. Kennedy’s books “*Lean Product Development for the Enterprise”*, “*Ready, Set, Dominate*” and “*Success is Assured”*. I truly and wholeheartedly recommend you to invest time in studying those if you want to learn more. I at least hope this article gave you some insights and some questions to think about, after all, as one of the book title’s promises, success can be assured.
-
-
 
 \[1] https://www.linkedin.com/pulse/software-dev-production-marcus-kempe/
